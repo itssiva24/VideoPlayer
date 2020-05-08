@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	scroll-behavior: auto;
+	font-family: 'Open sans';
+}
+
+video {
+	width: 80%;
+	height: 500px;
+	display: block;
+	margin: 0 auto;
+}
+#video-seek {
+	background: #cfe2f3;
+	height: 80px;
+	box-shadow: 0 10px 30px rgb(0, 0, 0, 0.5);
+	position: relative;
+}
+#timeline {
+	margin-top: 25px;
+	display: flex;
+	overflow-x: scroll;
+	background: black;
+	padding: 2px 0 25px 0;
+	cursor: grab;
+}
+#timeline div {
+	height: auto;
+	font-size: 15px;
+	margin-right: 60px;
+	cursor: grab;
+}
+#video-seek img {
+	position: absolute;
+	height: 90px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 20px 0 80px 0;
+}
+button {
+	color: #cfe2f3;
+	background-color: #000000;
+	margin: 0 20px;
+	width: 50px;
+	height: 50px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 50%;
+	outline: none;
+}
+.icons {
+	width: 15px;
+	height: 18px;
+}
+#before img,
+#after img {
+	width: 20px;
+	height: 25px;
+}
